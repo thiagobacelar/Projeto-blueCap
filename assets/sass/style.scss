@@ -1,0 +1,1045 @@
+
+/* CSS reset */
+
+html, body {margin: 0; padding: 0;font-family: 'Roboto', sans-serif;}
+ul{padding-left: 0px;}
+img{max-width: 100%;}
+
+/* Fontes */
+
+@import 'mixin.scss';
+@import 'cores.scss';
+
+
+@keyframes bordaPulse {
+    form {
+
+         filter: drop-shadow(0 0 0 $verde);
+    }
+
+    to {
+
+        filter: drop-shadow(0 0 4px $verde);
+    }
+}
+
+
+/* header */
+
+
+.header{
+
+background-color: $azulescuro;	
+
+.navbar-brand{
+	width: 100%;
+	text-align: center;
+
+  .logo{
+	width: 82px;
+	height: 57px;
+	margin-top: 2%;
+  } 
+ }
+
+ .bar-icone{
+ 	position: absolute;
+ 	right: 5%;
+ 	top:30px;
+ }
+ .navbar-toggler{
+ 	border:none;
+ 	border-color: none !important;
+ 	outline: none !important;
+ }
+
+ .navbar-toggler-icon{
+ 	fill: $branco;
+ }
+ .nav-item{
+ 	a{
+ 		color:$branco !important;
+ 	}
+ }
+}
+
+.blue-cap{
+	background:url('../imagens/bg.png')no-repeat;
+	background-position: center;
+	width: 100%;
+	background-size:cover;
+	display: inline-table;
+
+
+	.blue-cap-descricao{
+		@include conteudoCentro;
+	    padding-top: 10%;
+        
+	      .blue-cap-box-comprar{
+            @include botaocomprar;
+            @include Bordapulsar;
+            display: none;
+            
+		}
+
+		.blue-cap-redeSocial{
+		    	display: none;
+		    }
+
+		h1{
+			text-transform: uppercase;
+			font-size: 7.1875em;
+			color: $azulescuro;
+			font-weight: 700;
+			display: none;
+			
+		}
+		p{
+			width: 90%;
+			font-size: 1.125em;
+			color: $azulFonte;
+
+		}
+	}
+}
+
+.blue-cap-produto{
+       @include conteudoCentro;
+	    padding-bottom: 10%;
+
+		img{
+	       max-width: 80%;
+		}
+
+	.blue-cap-box-comprar{
+      
+      @include botaocomprar;
+      margin-top: 3%;
+	}
+}
+
+.blue-cap-bottom{
+	background-color: $azulescuro;
+
+	.blue-cap-selos{
+		padding: 6% 0%;
+		ul{
+			li{
+				width: 33.33%;
+				float: left;
+				list-style: none;
+				text-align: center;
+				img{
+					max-width: 80%;
+				}
+			}
+		}
+	}
+}
+
+.blue-cap-explicacao{
+	background-color: $azulclaro;
+	 @include conteudoCentro;
+	 padding-bottom: 2%;
+
+		p{
+			//width: 90%;
+			font-size: 1.2em;
+			font-weight: 400;
+			color: $azulFonte;
+			text-align: center;
+
+			&::before{
+			   content: "";
+			   width:0;
+			   height:0; 
+			   border:20px solid transparent;
+			   display:block;
+			   border-top-color: $azulescuro;
+			   margin: 0 auto;
+			   margin-top: 3%;
+			}
+		}
+
+		.tirar-duvidas{
+			//width: 80% !important;
+			@include botaocomprar;
+			margin:0 auto;
+			background-color: $azulmedio;
+			position: relative;
+			top:10%;
+		}
+}
+
+.blue-cap-dermatite{
+	 background-color: $branco;
+	 @include conteudoCentro;
+	 padding: 12% 0%;
+
+	 .titulo{
+	 	@include titulos;
+	 	width: 80%;
+	 	color: $azulescuro;
+	 	padding-top: 5%;
+
+	 	&::before{
+	 		@include SetaEsquerda;
+	 		
+	 	}
+
+	 	.direita{
+	 		@include SetaDireita;
+	 	}
+
+	 	//&::after{
+	 		//@include SetaDireita;
+	 		
+	 	//}
+	 }
+
+ .blue-cap-creme, .Blue-Cap-Gel{
+
+	 .blue-cap-creme-box{
+	 	 @include conteudoCentro;
+       h4{
+       	font-size: 1.125em;
+        color: $azulescuro;
+        font-weight: 700;
+      }
+       p{
+       	width: 90%;
+       	font-size: 0.875em;
+        color: $azulescuro;
+        font-weight: 400;
+        margin-bottom: 6%;
+      }
+	 }
+   }
+}
+
+.blue-cap-beneficios{
+	padding: 12% 0%;
+	background-color: $azulClaro2;
+	@include conteudoCentro;
+
+	.titulo{
+		@include titulos;
+	 	color: $branco;
+	 	padding-bottom: 10%;
+
+	 	&::before{
+	 		@include SetaEsquerda;
+	 		border-left-color: $branco;
+	 		
+	 	}
+
+	 	.direita{
+	 		@include SetaDireita;
+	 		border-right-color: $branco;
+	 	}
+
+	 	&::after{
+	 		display: none;
+	 	
+	 	}
+	 }
+
+	 .box-order-beneficio{
+	 	display: flex;
+	 	justify-content: left;
+	 	align-content: center;
+	 	width: 70%;
+	 	margin:0 auto;
+	 	height: 5em;
+	 	background-color: $branco;
+	 	border-radius: 1em;
+	 	margin-bottom: 6%;
+
+	 	h1{
+	 	 font-weight: 700;	
+	 	 color: $azulClaro2;	
+	 	 position: absolute;
+         left: -10%;
+	     font-size: 5em;
+	     top: -10%;
+	     text-shadow: 0px 0px 10px $azulescuro;
+	     -webkit-text-shadow: 0px 0px 4px $azulescuro;
+	     -moz-text-shadow: 0px 0px 4px $azulescuro;
+	     -o-text-shadow: 0px 0px 4px $azulescuro;
+	 	}
+	 	p{
+	 		width: 90%;
+	 		position: relative;
+	 		left: 10%;
+	 		top:30%;
+	 		text-align: left;
+	 		font-size: 0.7em;
+	 		font-weight: 400;
+	 		color: $azulescuro;
+	 	}
+	 }
+}
+
+.blue-cap-resultados{
+	padding: 12% 0%;
+	background-color: $branco;
+	@include conteudoCentro;
+
+	.titulo{
+		@include titulos;
+		width: 80%;
+
+		&::before{
+	 		@include SetaEsquerda;
+	 		border-left-color: $azulescuro;
+	 		
+	 	}
+
+	 	.direita{
+	 		@include SetaDireita;
+	 		border-right-color: $azulescuro;
+	 	}
+
+	 	/*&::after{
+	 		@include SetaDireita;
+	 		border-right-color: $azulescuro;
+	 	
+	 	}*/
+		color:$azulescuro;
+	}
+
+	.blue-cap-resultados-box{
+       width: 90%;
+       @include conteudoCentro;
+       margin: 0 auto;
+       margin-bottom: 1%;
+       padding:2% !important;      
+
+		.blue-cap-legenda{
+			width: 100%;
+			height: 15vh;
+			font-weight:700;
+			color:$azulescuro;
+			background-color: $azulclaro;
+			@include conteudoCentro;
+
+			h4{
+			   font-size: 1em;
+			}
+		}
+
+		.blue-cap-resultados-img{
+          width: 100%;
+          img{
+          	width: 100%;
+          	filter: grayscale(60%);
+		    -webkit-filter: grayscale(60%);
+		    -moz-filter: grayscale(60%);
+		    -ms-filter: grayscale(60%);
+		    -o-filter: grayscale(60%);
+
+		    &:hover{
+
+		    filter: grayscale(0%);
+		    -webkit-filter: grayscale(0%);
+		    -moz-filter: grayscale(0%);
+		    -ms-filter: grayscale(0%);
+		    -o-filter: grayscale(0%);
+		    }
+          }
+		}
+     }
+}
+
+.blue-cap-molecular{
+	 padding: 12% 0%;
+	 background-color: $azulclaro;
+	 @include conteudoCentro;
+
+	 .titulo{
+		@include titulos;
+		width: 80%;
+
+		&::before{
+	 		@include SetaEsquerda;
+	 		border-left-color: $azulescuro;
+	 		
+	 	}
+
+	 	.direita{
+	 		@include SetaDireita;
+	 		border-right-color: $azulescuro;
+	 	}
+
+	 	&::after{
+	 		border-right-color: $azulclaro;
+	 	
+	 	}
+
+		color:$azulescuro;
+	}
+
+	.molecular-img{
+		background-color: $branco;
+		border-radius: 100%;
+		opacity: 0.9;
+		width: 60%;
+        margin: auto;
+        margin-bottom: 6%;
+	}
+
+	.molecular-descricao{
+		p{
+			font-weight: 700;
+			font-size: 1.125em;
+			color:$azulescuro;
+		}
+	}           
+}
+
+
+
+.blue-cap-estudos{
+	 padding: 12% 0%;
+	 background-color: $azulescuro;
+	 @include conteudoCentro;
+
+	 .titulo{
+		@include titulos;
+
+		&::before{
+	 		@include SetaEsquerda;
+	 		border-left-color: $branco;
+	 		
+	 	}
+
+	 	.direita{
+	 		@include SetaDireita;
+	 		border-right-color: $branco;
+	 	}
+
+	 	&::after{
+	 		
+	 		border-right-color: $azulescuro;
+	 	
+	 	}
+		color:$branco;
+	}
+
+	.estudos-img{
+		width: 80%;
+        margin: auto;
+        padding-bottom: 3%;
+	}
+
+	.estudos-descricao{
+
+		.sub-titulo{
+			font-weight: 700;
+			font-size: 1.125em;
+			color:$branco;
+		}
+
+		p{font-weight: 700;
+		  font-size: 0.875em;
+		  color:$branco;}
+	}
+
+	.estudo-dowload{	
+       @include botaocomprar;
+       width: 70%;
+       background-color: $azulmedio;
+       margin:0 auto;
+	}
+          
+}
+
+
+.blue-cap-midia{
+	 padding: 12% 0%;
+	 background-color: $branco;
+	 @include conteudoCentro;
+
+	 .titulo{
+		@include titulos;
+	
+
+		&::before{
+	 		@include SetaEsquerda;
+	 		border-left-color: $azulescuro;
+	 		
+	 	}
+
+	 	.direita{
+	 		@include SetaDireita;
+	 		border-right-color: $azulescuro;
+	 	}
+
+	 	&::after{
+	 		display: none;
+	 	
+	 	}
+		color:$azulescuro;
+	}
+	.sub-titulo{
+		width: 90%;
+		margin: 0 auto;
+		font-size: 1.5em;
+		font-weight: 700;
+		color:$azulescuro;
+		padding-bottom: 6%;
+	}
+
+	.blue-cap-exame, .blue-cap-psoriase{
+		figure{
+			img{
+				width: 80%;
+			}
+		}
+	}
+
+	.blue-cap-exame-noticia{
+	   padding-bottom: 6%;
+	   @include conteudoCentro;
+       h4{font-size:1.125em;color:$azulescuro;font-weight: 700;}
+       p{width:80%;font-size:0.875em;color:$azulescuro;font-weight: 400;}
+       a{text-decoration: underline;color:$azulescuro;font-size: 1em;}
+
+	}
+}
+
+
+
+.blue-cap-regulamento{
+     padding: 12% 0%;
+	 background-color: $azulmedio;
+	 @include conteudoCentro;
+
+	 .titulo{
+	 	width: 90%;
+	 	margin: 0 auto;
+	 	font-size: 2em;
+	 	font-weight: 700;
+	 	color:$branco;
+	 }
+
+	 .regulamentadores{
+	 	display: flex;
+	 	flex-direction: columns;
+	 	padding:6% 0%; 
+
+	 	ul{
+	 		li{
+	 			width: 30%;
+	 			margin-left: 1.11%;
+	 			float: left;
+	 			list-style: none;
+	 			margin-bottom: 3%;
+
+	 			img{
+	 				width:100%;
+	 			}
+	 		}
+	 	}
+	 }
+   
+   .anvisa{color: $branco;font-size: 1.125em;}
+
+}
+
+.blue-cap-compre{
+	 padding: 12% 0%;
+	 background-color: $branco;
+	 @include conteudoCentro;
+
+	 .titulo{
+		@include titulos;
+	
+
+		&::before{
+	 		@include SetaEsquerda;
+	 		border-left-color: $azulescuro;
+	 		
+	 	}
+
+	 	.direita{
+	 		@include SetaDireita;
+	 		border-right-color: $azulescuro;
+	 	}
+
+	 	&::after{
+	 		display: none;
+	 	
+	 	}
+
+		color:$azulescuro;
+	}
+
+  .card-horizontal{
+  	display: flex; 
+  	flex: 1 1 auto;
+  	.img-square-wrapper{
+  	  display: flex;	
+	  align-items: center;
+	  	img{
+	  		object-fit: cover;
+	  	}
+	  }
+  }
+
+	.card{
+		margin-bottom: 5%;
+
+	  .card-body{
+	  	box-shadow: 0px 0px 10px $cinza;
+	  	color:$azulescuro;
+	  	padding-top: 15%;
+	  	.card-title{font-size: 1.125em;font-weight:700;}
+	  	span.apenas{font-size: 0.9em;font-weight:400;}
+	  	.card-text{font-size: 0.9em;font-weight:400;}
+	  	.blue-cap-box-comprar{
+	  		@include botaocomprar;
+	  		@include Bordapulsar;
+	  		width: 100%;
+	  		height: 2.5em;
+	  		a{
+	  			line-height: 2.5em;
+	  		}
+	  	}
+	  }
+	}
+
+}
+
+.blue-cap-desconto{
+    
+     padding: 6% 0%;
+	 background-color: $branco;
+	 @include conteudoCentro;	
+
+	.titulo{
+		@include titulos;
+		width: 100% !important;
+		color:$azulClaro2 !important;
+		font-weight: 900;
+	
+
+		&::before{
+	 		//@include SetaEsquerda;
+	 		//border-left-color: $branco;
+	 		
+	 	}
+
+	 	&::after{
+	 		//@include SetaDireita;
+	 		//border-right-color: $branco;
+	 	
+	 	}
+		color:$azulescuro;
+	}
+
+	.chamada{
+		width: 90%;
+		margin:0 auto;
+		text-align: center;
+	}
+
+	.form-inline{
+		width: 90%;
+		padding:4% 0%;
+		margin: auto;
+		flex-direction: column;
+
+
+		input[type="text"]{
+          height: 9vh;
+          border-radius: 10px;
+          border: 2px solid $cinza;
+          outline: none;
+          color: $cinza;
+          padding-left: 2%;
+          text-align: left;
+		}
+
+		button[type="submit"]{
+			background-color: $azulClaro2 !important;
+			width: 10em;
+			@include botaocomprar;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.bg-entrega{
+		width: 100%;
+		background-color: $azulclaro;
+
+		.bg-entregador{
+           width: 100%;
+           height: 100%;
+           background: url('../imagens/hero_saopaulo2.png')no-repeat;
+           background-size: cover;
+           background-position:center center; 
+		}
+
+		.entrega-regiao{
+			width: 90%;
+			padding:6% 0%;
+			margin: auto;
+			font-size: 1.5em;
+			line-height:2.5em;
+			font-weight: 400;
+			color:$azulmedio;
+			text-align: center;
+		}
+
+		.cep{
+			width: 90%;
+			margin:auto;
+            font-size: 1em;
+			font-weight: 700;
+			color:$azulescuro;
+			padding:3%;  
+			text-align: center;
+		}
+	}
+
+.blue-cap-medico{
+     padding: 12% 0%;
+	 background-color: $branco;
+	 @include conteudoCentro;
+	 border-bottom:10px solid $azulclaro; 
+
+    .titulo{
+		margin:0 auto;
+		width: 100% !important;
+		@include titulos;
+	
+
+		&::before{
+	 		//@include SetaEsquerda;
+	 		//border-left-color: $branco;
+	 		
+	 	}
+
+	 	&::after{
+	 		//@include SetaDireita;
+	 		//border-right-color: $branco;
+	 	
+	 	}
+		color:$azulescuro;
+	}
+
+	.medico-img{
+		display: none;
+	}
+
+	.medico-descricao{
+		h2{display: none;}
+		p{
+			font-size: 1.3em;
+		    font-weight:400; 
+		    color: $azulescuro;
+		    line-height: 2em;
+		}
+	}
+
+.form-inline{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	.form-group{
+
+		label{
+			display: contents;
+			font-size: 1.125em;
+			color:$azulescuro;
+			text-align: left;
+		}
+
+		input{
+			border-radius:8px;
+            border:2px solid $cinza;
+            height: 52px;
+		}
+	  }
+
+	  button[type="submit"]{
+			margin-top: 3%;
+			width: 80%;
+            height: 50px
+		}
+	}
+}
+
+
+.blue-cap-duvidas{
+    
+     padding: 12% 0%;
+	 background-color: $branco;
+	 @include conteudoCentro;
+
+	.titulo{
+		margin:0 auto;
+		width: 100% !important;
+		@include titulos;
+	
+
+		&::before{
+	 		@include SetaEsquerda;
+	 		border-left-color: $azulescuro;
+	 		
+	 	}
+
+	 	&::after{
+	 		@include SetaDireita;
+	 		border-right-color: $azulescuro;
+	 	
+	 	}
+		color:$azulescuro;
+	}
+
+	.lista-duvidas-left{
+		margin:0 auto;
+
+		ul{
+			li{
+				overflow: hidden;
+				border-radius: 16px;
+				list-style: none;
+				border: 2px solid $azulescuro;
+                height: auto;
+				margin-bottom: 3%;
+
+				.answer{
+					display: none;
+					width: 100%;
+					text-align: center;
+					font-size: 0.9em;
+				}
+
+				.answer-active{
+					display: block;
+				}
+
+
+				a{ 
+				    width: 83%;
+				    padding-left: 2%;
+				    font-size: 0.8em;
+				    float: left; 
+					line-height: 50px;
+					text-decoration: none;
+                    color:$azulescuro;
+                    height: 100%;
+					display: inline-block;
+				}
+
+				i{
+					 width: 13%;
+					 float:right;
+					 color:$azulescuro;
+					 line-height: 50px;
+					 padding-right: 2%; 
+				}
+			}
+		}
+	}
+}
+
+.blue-cap-quemsomos{
+
+	 padding: 12% 0%;
+	 background-color: $azulUnica;
+	 @include conteudoCentro;
+
+	 .titulo{
+		margin:0 auto;
+		width: 100% !important;
+		@include titulos;
+		padding-bottom: 3% !important;
+	
+
+		&::before{
+	 		@include SetaEsquerda;
+	 		border-left-color: $branco;
+	 		
+	 	}
+
+	 	&::after{
+	 		@include SetaDireita;
+	 		border-right-color: $branco;
+	 	
+	 	}
+		color:$branco;
+	}
+
+	.sub-titulo{
+		padding-top: 2%;
+		font-size: 1.5em;
+		color:$branco;
+		font-weight: 900;
+	}
+
+	.quemsomos-box{
+		 @include conteudoCentro;
+            
+            .unicap{
+            	width: 80%;
+            } 
+
+			 .quemsomos-img{
+			 	padding:3% 0%;
+			 }
+
+			h3{
+				font-size: 1.3em;
+			    color:$branco;
+			    font-weight: 700;
+			}
+			p{
+				width: 90%;
+				font-size: 1em;
+				padding:2% 0%;
+				color:$branco;
+				line-height: 2em;
+			}
+
+			.blue-cap-redeSocial{
+				display: none;
+			}
+	}
+
+}
+
+
+.blue-cap-info-footer{
+	 padding: 6% 0%;
+	 background-color: $branco;
+	 @include conteudoCentro;
+	 border-bottom: 10px solid #DFEEF9;
+
+	 .atendimento, .Pagamento, .seguranca {
+		.titulo{
+			margin:0 auto;
+			width: 100% !important;
+			@include titulos;
+			padding-top: 3%;
+			padding-bottom: 3% !important;
+		
+
+			&::before{
+		 		@include SetaEsquerda;
+		 		border-left-color: $azulescuro;
+		 		
+		 	}
+
+		 	&::after{
+		 		//@include SetaDireita;
+		 		//border-right-color: $branco;
+		 	
+		 	}
+			color:$azulescuro;
+		}
+	 }
+	
+	 .atendimento{
+	 	ul{
+	 		li{
+	 			list-style: none;
+	 			font-size: 1.125em;
+	 			line-height: 2.6em;
+	 			font-weight: 400;
+	 			color:$azulescuro;
+	 		}
+	 	}
+	 }
+
+	 .Pagamento{
+	 	
+	 	.titulo{
+          margin-bottom: 3%; 
+	 	}
+	 	ul{
+	 		li{ 
+	 			float:left;
+	 			width: 25%;
+	 			list-style: none;
+	 			margin-bottom: 5%;
+	 		}
+	 	}
+	 } 
+
+	 .seguranca{
+	 	
+	 	.titulo{
+          margin: 4% 0%; 
+	 	}
+	 	ul{
+	 		li{ 
+	 			list-style: none;
+	 			margin-bottom: 5%;
+	 		}
+	 	}
+	 } 
+}
+
+
+.blue-cap-localizacao{
+
+	 background-color: $branco;
+	 @include conteudoCentro;
+	 padding: 12% 0%;
+
+
+	.titulo{
+			margin:0 auto;
+			width: 100% !important;
+			@include titulos;
+			padding-bottom: 6% !important;
+		
+
+			&::before{
+		 		@include SetaEsquerda;
+		 		border-left-color: $azulescuro;
+		 		
+		 	}
+
+		 	&::after{
+		 		//@include SetaDireita;
+		 		//border-right-color: $branco;
+		 	
+		 	}
+			color:$azulescuro;
+		}
+
+		.localizao-list{
+		    width: 100%;
+		    text-align: center;
+		    margin-bottom: 2%;
+
+			p{
+				font-size: 1.125em;
+			    font-weight: 400;
+			    color:$azulescuro;
+			}
+		}
+}
+
+.rodape{
+   padding:6% 0%;	
+   @include conteudoCentro;
+   background-color: #142339;
+
+       .copyright{
+       	    color:$branco;
+       	    font-size: 1em;
+       	    font-weight: 400;
+       }
+
+}
+
+.seta-subir{
+	display: none;
+}

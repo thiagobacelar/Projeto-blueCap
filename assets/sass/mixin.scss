@@ -1,0 +1,81 @@
+
+@mixin Bordapulsar{
+	animation: bordaPulse 1s alternate infinite ease-in-out;
+    -webkit-animation: bordaPulse 1s alternate infinite ease-in-out;
+    -moz-animation: bordaPulse 1s alternate infinite ease-in-out;
+    -o-animation: bordaPulse 1s alternate infinite ease-in-out;
+}
+
+
+@mixin botaocomprar{
+    width: 16.87em;
+	height: 3.6225em;
+	background-color: $verde;
+	color: $branco;
+	border-radius: 50px;
+
+	a{
+		font-weight:700;
+		display: block;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: $branco;
+		line-height: 3.6225em;
+		&:hover{
+			color: $branco;
+		}
+	}
+}
+
+@mixin conteudoCentro{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin SetaEsquerda{
+   content: "";
+   width:0;
+   height:0; 
+   border:15px solid transparent;
+   display:block;
+   border-left-color: $azulescuro;
+   margin: 0 auto;
+   display: inline-block;
+}
+
+@mixin SetaDireita{
+   content: "";
+   width:0;
+   height:0; 
+   border:15px solid transparent;
+   display:block;
+   border-right-color: $azulescuro;
+   margin: 0 auto;
+   display: inline-block;
+}
+
+@mixin titulos{
+
+	width: 60%;
+	margin:0 auto;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size:1.5em;
+	padding-bottom: 10%;
+	text-align: center;
+
+	&::before{
+		@include SetaEsquerda;
+		border-left-color: $branco;
+		
+	}
+
+	&::after{
+		@include SetaDireita;
+		border-right-color: $branco;
+
+	}
+}

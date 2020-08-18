@@ -1,0 +1,346 @@
+/* cores */
+@media (min-width: 768px) {
+  .seta-subir-active {
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    color: #094299;
+    background-color: #ffffff;
+    right: 3%;
+    bottom: 3%;
+    padding: 0.2em 0.5em;
+    border-radius: 3px;
+    border: 1px solid #094299; }
+  .header-active {
+    position: fixed;
+    width: 100%;
+    z-index: 11; }
+  span.direita {
+    display: none !important; }
+  .titulo::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    display: block;
+    border-right-color: #094299;
+    margin: 0 auto;
+    display: inline-block; }
+  .tirar-duvidas a {
+    line-height: 2.8em !important;
+    font-size: 1.3em; }
+  .blue-cap-selos {
+    padding: 3% 0% !important; }
+  .blue-cap-dermatite {
+    padding: 6% 0%;
+    align-items: left; }
+    .blue-cap-dermatite .titulo::after {
+      display: inline-block;
+      border-right-color: #094299; }
+    .blue-cap-dermatite .box-imagem-dermatite, .blue-cap-dermatite .blue-cap-creme-box {
+      width: 50%; }
+    .blue-cap-dermatite .blue-cap-creme-box {
+      align-items: end !important;
+      text-align: left !important; }
+  .blue-cap-beneficios {
+    padding: 6% 0%; }
+    .blue-cap-beneficios .titulo::after {
+      display: inline-block;
+      border-right-color: #ffffff; }
+    .blue-cap-beneficios .box-order-beneficio p {
+      left: 10%;
+      top: 20%;
+      font-size: 1em; }
+  .blue-cap-resultados {
+    padding: 6% 0%; }
+    .blue-cap-resultados .titulo::after {
+      border-right-color: #094299; }
+    .blue-cap-resultados .blue-cap-resultados-box .blue-cap-legenda {
+      height: 10vh; }
+      .blue-cap-resultados .blue-cap-resultados-box .blue-cap-legenda h4 {
+        width: 70%;
+        font-size: 1.5em !important; }
+  .blue-cap-molecular {
+    padding: 6% 0%; }
+    .blue-cap-molecular .titulo::after {
+      border-right-color: #094299; }
+    .blue-cap-molecular .molecular-descricao p {
+      font-weight: 400; }
+  .blue-cap-estudos {
+    padding: 6% 0%; }
+    .blue-cap-estudos .estudos-descricao p {
+      width: 90%;
+      margin: auto;
+      padding: 3%; }
+    .blue-cap-estudos .titulo::after {
+      border-right-color: #ffffff; }
+    .blue-cap-estudos .estudo-dowload {
+      width: 40%; }
+  .blue-cap-midia {
+    padding: 6% 0%; }
+    .blue-cap-midia .titulo::after {
+      display: inline-block;
+      border-right-color: #094299; }
+    .blue-cap-midia .sub-titulo {
+      font-weight: 400; }
+    .blue-cap-midia .blue-cap-exame, .blue-cap-midia .blue-cap-psoriase {
+      display: flex;
+      flex-direction: row; }
+      .blue-cap-midia .blue-cap-exame figure, .blue-cap-midia .blue-cap-psoriase figure {
+        width: 50%; }
+      .blue-cap-midia .blue-cap-exame .blue-cap-exame-noticia, .blue-cap-midia .blue-cap-psoriase .blue-cap-exame-noticia {
+        width: 50%;
+        align-items: end !important;
+        text-align: left !important; }
+        .blue-cap-midia .blue-cap-exame .blue-cap-exame-noticia p, .blue-cap-midia .blue-cap-psoriase .blue-cap-exame-noticia p {
+          margin-bottom: 0.5rem; }
+  .blue-cap-regulamento {
+    padding: 6% 0%; }
+    .blue-cap-regulamento .titulo::after {
+      display: none; }
+    .blue-cap-regulamento .regulamentadores ul {
+      margin: auto; }
+  .blue-cap-compre {
+    padding: 6% 0%; }
+    .blue-cap-compre .titulo::after {
+      display: inline-block;
+      border-right-color: #094299; }
+  .blue-cap-desconto .titulo {
+    color: #094299 !important;
+    padding-bottom: 2%;
+    letter-spacing: 4px;
+    font-size: 1.7em; }
+  .blue-cap-desconto .chamada p {
+    color: #094299; }
+  .blue-cap-desconto .form-inline {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row; }
+    .blue-cap-desconto .form-inline .form-group input[type='text'] {
+      height: 4.5vh; }
+    .blue-cap-desconto .form-inline button[type="submit"] {
+      height: 3em; }
+  .blue-cap-desconto .bg-entrega .entrega-regiao {
+    padding-bottom: 0%;
+    color: #094299; }
+  .blue-cap-desconto .bg-entrega .cep {
+    font-weight: 700; }
+  .blue-cap-medico {
+    padding: 6% 0%; }
+    .blue-cap-medico .titulo {
+      padding-bottom: 5%; }
+    .blue-cap-medico .form-group {
+      margin-bottom: 3%; }
+    .blue-cap-medico .medico-descricao {
+      margin: auto; }
+  .blue-cap-duvidas {
+    padding: 6% 0%; }
+    .blue-cap-duvidas .box-duvidas {
+      margin: 0 auto; }
+  .blue-cap-quemsomos .quemsomos-box {
+    margin: auto; }
+    .blue-cap-quemsomos .quemsomos-box .unicap {
+      width: 60%; }
+  .blue-cap-info-footer .box-info-footer .atendimento, .blue-cap-info-footer .box-info-footer .Pagamento, .blue-cap-info-footer .box-info-footer .seguranca {
+    margin: 0 auto; }
+  .blue-cap-localizacao {
+    padding: 6% 0%; }
+  .rodape {
+    padding: 3% 0%; }
+    .rodape .copyright {
+      text-align: center; } }
+
+@media (min-width: 1200px) {
+  .header .navbar-brand {
+    text-align: left; }
+    .header .navbar-brand .logo {
+      margin-top: 0%; }
+  .header .navbar-nav .nav-item {
+    margin-left: 3em; }
+  .blue-cap-descricao {
+    padding-top: 0% !important;
+    align-items: baseline !important; }
+    .blue-cap-descricao .blue-cap-box-comprar, .blue-cap-descricao .blue-cap-redeSocial {
+      display: block !important; }
+    .blue-cap-descricao h1 {
+      display: block !important; }
+    .blue-cap-descricao p {
+      text-align: left; }
+    .blue-cap-descricao .box-comprar {
+      width: 100%;
+      display: flex;
+      flex-direction: row; }
+      .blue-cap-descricao .box-comprar .blue-cap-redeSocial {
+        width: 50%; }
+        .blue-cap-descricao .box-comprar .blue-cap-redeSocial ul {
+          margin-left: 5%;
+          position: relative;
+          top: 18px; }
+          .blue-cap-descricao .box-comprar .blue-cap-redeSocial ul li {
+            list-style: none;
+            float: left;
+            margin-left: 3%; }
+  .blue-cap-bottom .row {
+    width: 100%; }
+  .blue-cap-produto {
+    padding: 5% 0%; }
+    .blue-cap-produto .blue-cap-box-comprar {
+      display: none; }
+  .blue-cap-explicacao {
+    padding-bottom: 0%; }
+    .blue-cap-explicacao p {
+      text-align: left; }
+      .blue-cap-explicacao p:before {
+        margin: inherit;
+        margin-top: 0%; }
+    .blue-cap-explicacao .tirar-duvidas {
+      float: right;
+      width: 15em;
+      height: 3em; }
+      .blue-cap-explicacao .tirar-duvidas .duvidas {
+        font-size: 1.0em; }
+        .blue-cap-explicacao .tirar-duvidas .duvidas a {
+          line-height: 3em; }
+  .blue-cap-dermatite {
+    padding: 3% 0%; }
+    .blue-cap-dermatite .titulo {
+      padding-bottom: 5%; }
+  .blue-cap-beneficios {
+    padding: 3% 0%; }
+    .blue-cap-beneficios .box-order-beneficio {
+      margin-bottom: 3% !important;
+      max-width: 21%; }
+  .blue-cap-resultados .titulo {
+    padding-bottom: 5%; }
+  .blue-cap-resultados .blue-cap-resultados-box .blue-cap-legenda {
+    height: 15vh; }
+    .blue-cap-resultados .blue-cap-resultados-box .blue-cap-legenda h4 {
+      width: 90%;
+      font-weight: 700; }
+  .blue-cap-molecular {
+    padding: 3% 0%; }
+    .blue-cap-molecular .titulo {
+      padding-bottom: 0%; }
+    .blue-cap-molecular .molecular-img {
+      width: 50%;
+      margin-bottom: 0%; }
+    .blue-cap-molecular .molecular-descricao {
+      display: flex;
+      align-items: center; }
+      .blue-cap-molecular .molecular-descricao p {
+        text-align: left;
+        padding-left: 15px; }
+  .blue-cap-estudos {
+    padding: 3% 0%; }
+    .blue-cap-estudos .titulo {
+      padding-bottom: 5%; }
+    .blue-cap-estudos .estudos-descricao {
+      text-align: left; }
+      .blue-cap-estudos .estudos-descricao p {
+        font-weight: 400;
+        padding-top: 1%;
+        width: 100%;
+        padding-left: 0%; }
+    .blue-cap-estudos .estudo-dowload {
+      width: 25%;
+      height: 3em;
+      margin: inherit; }
+      .blue-cap-estudos .estudo-dowload a {
+        text-align: center;
+        line-height: 3em; }
+  .blue-cap-midia .titulo {
+    padding-bottom: 4%; }
+  .blue-cap-midia .sub-titulo {
+    padding-bottom: 3%; }
+  .blue-cap-midia .blue-cap-exame h4, .blue-cap-midia .blue-cap-psoriase h4 {
+    font-size: 1.3em; }
+  .blue-cap-midia .blue-cap-exame figure img, .blue-cap-midia .blue-cap-psoriase figure img {
+    width: 100%;
+    padding: 0% 3% 3% 3%; }
+  .blue-cap-midia .blue-cap-exame-noticia p {
+    width: 100%; }
+  .blue-cap-compre {
+    padding: 5% 0% 0% 0%; }
+    .blue-cap-compre .card {
+      margin-bottom: 0%;
+      height: 324.55px; }
+      .blue-cap-compre .card .card-body {
+        padding: 1.25rem; }
+  .blue-cap-regulamento .regulamentadores {
+    padding: 0%; }
+  .blue-cap-regulamento .titulo {
+    width: 80%;
+    text-align: left; }
+  .blue-cap-regulamento .anvisa {
+    width: 100%;
+    text-align: left; }
+  .blue-cap-desconto {
+    padding: 6% 0% 0% 0%; }
+    .blue-cap-desconto .titulo {
+      text-transform: capitalize;
+      padding-bottom: 0%; }
+    .blue-cap-desconto .chamada {
+      display: none; }
+    .blue-cap-desconto .chamada-inline p {
+      color: #094299;
+      font-weight: 400;
+      text-align: left;
+      margin-bottom: 0%; }
+    .blue-cap-desconto .form-inline input[type="text"] {
+      height: 3em !important; }
+  .bg-entrega {
+    background: url("../imagens/hero_saopaulo2.png") no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-color: #094299; }
+    .bg-entrega .bg-entregador {
+      background: none; }
+    .bg-entrega .entrega-regiao, .bg-entrega .cep {
+      color: #ffffff;
+      text-align: left; }
+  .blue-cap-medico {
+    padding: 3% 0%; }
+    .blue-cap-medico .titulo {
+      padding-bottom: 2%; }
+    .blue-cap-medico .medico-img {
+      display: block; }
+    .blue-cap-medico .medico-descricao {
+      text-align: left; }
+      .blue-cap-medico .medico-descricao p {
+        line-height: 1.3em; }
+    .blue-cap-medico .form-inline {
+      flex-direction: row; }
+      .blue-cap-medico .form-inline .form-group {
+        padding-left: 0%; }
+        .blue-cap-medico .form-inline .form-group input[type="text"] {
+          padding-left: 3%;
+          color: #000000;
+          font-size: 1em; }
+      .blue-cap-medico .form-inline button[type="submit"] {
+        width: 40%; }
+  .blue-cap-quemsomos {
+    padding: 3% 0%; }
+    .blue-cap-quemsomos .quemsomos-box {
+      text-align: left;
+      justify-content: left !important;
+      align-items: baseline; }
+      .blue-cap-quemsomos .quemsomos-box .blue-cap-redeSocial {
+        display: flex;
+        flex-direction: row; }
+        .blue-cap-quemsomos .quemsomos-box .blue-cap-redeSocial ul li {
+          float: left;
+          list-style: none;
+          color: #ffffff;
+          margin-left: 10px; }
+          .blue-cap-quemsomos .quemsomos-box .blue-cap-redeSocial ul li i {
+            color: #ffffff; }
+  .blue-cap-info-footer .info-list {
+    text-align: left; }
+    .blue-cap-info-footer .info-list h1 {
+      text-align: left !important; }
+    .blue-cap-info-footer .info-list ul li img {
+      max-width: 80%; }
+  .blue-cap-localizacao {
+    padding: 3% 0%; } }
